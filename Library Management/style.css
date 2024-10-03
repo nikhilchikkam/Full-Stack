@@ -1,0 +1,22 @@
+.title-container {
+    height: 25vh;
+    color: #ffffff;
+    background-image: url("https://assets.ccbp.in/frontend/dynamic-webapps/library-management-bg.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+img {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+input {
+    max-width: 600px;
+    width: 100%;
+}
+
+.book-container {
+    padding: 10px;
+}
