@@ -2,7 +2,7 @@
 
 🚀 A simple web app that **fetches interesting facts about numbers**.
 
-🔗 **Live Demo**: [Number Facts](https://nikhilchikkam.github.io/Full-Stack/Number_Facts/)
+🔗 **Live Demo**: [Number Facts](https://nikhilchikkam.github.io/Full-Stack/Number_Fact/)
 
 ---
 
