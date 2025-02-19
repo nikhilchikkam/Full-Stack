@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="todos.css">
+</head>
+
+<body>
+    <div class="todos-bg-container">
+        <div class="container">
+            <h1 class="todos-heading">Todos</h1>
+            <h2 class="create-task-heading">Create <span class="create-task-heading-subpart">Task</span></h2>
+            <div class="input-group mb-3">
+                <input type="text" id="todoUserInput" class="form-control" placeholder="What needs to be done?">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" id="addTodoButton">Add</button>
+                </div>
+            </div>
+            <h2 class="todo-items-heading">My <span class="todo-items-heading-subpart">Tasks</span></h2>
+            <ul class="todo-items-container" id="todoItemsContainer"></ul>
+            <button class="btn btn-success mt-3" id="saveTodoButton">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
