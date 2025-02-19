@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/numbers-fact-bg.png");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.user-input {
+    width: 320px;
+    border-radius: 5px;
+}
+
+.fact-text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 400px;
+    text-align: center;
+}
+
+.spinner {
+    color: #ffffff;
+}
