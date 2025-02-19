@@ -2,7 +2,7 @@
 
 🚀 A simple web app to **search for any country** and view its **population & flag**.
 
-🔗 **Live Demo**: [Find Countries Population](https://nikhilchikkam.github.io/Full-Stack/Countries_Population/)
+🔗 **Live Demo**: [Find Countries Population](https://nikhilchikkam.github.io/Full-Stack/Countries_Search/)
 
 ---
 
