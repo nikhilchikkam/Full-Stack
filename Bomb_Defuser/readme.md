@@ -2,7 +2,7 @@
 
 🚀 A simple web app that **simulates a bomb countdown**, and users must type `'defuse'` before time runs out.
 
-🔗 **Live Demo**: [Bomb Defuser Timer](https://nikhilchikkam.github.io/Full-Stack/Bomb_Defuser_Timer/)
+🔗 **Live Demo**: [Bomb Defuser Timer](https://nikhilchikkam.github.io/Full-Stack/Bomb_Defuser/)
 
 ---
 
