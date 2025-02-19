@@ -1,5 +1,5 @@
 # Library Management System
-https://nikhilchikkam.github.io/Full-Stack/Library%20Management/
+https://nikhilchikkam.github.io/Full-Stack/Library_Management/
 
 This is a simple web-based **Library Management System** that allows users to search for books by title and displays the search results dynamically. The project utilizes **Bootstrap 4**, **JavaScript**, and an external API to fetch book details.
 
