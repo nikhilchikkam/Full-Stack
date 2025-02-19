@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Bree Serif", serif;
+}
+
+.fav-str-bkg {
+    background-color: #894bca;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fav-str-top-section {
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fav-str-img {
+    height: 20vh;
+    max-width: 50%;
+    padding: 1rem;
+}
+
+.fav-str-heading {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.fav-str-bottom-section {
+    background-color: white;
+    height: 75vh;
+    width: 100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.fav-str-btm-sec-heading {
+    color: #f780c3;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.fav-str-stores-container {
+    padding: 1rem;
+}
+
+.fav-str-card {
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background: #f7f7f7;
+    margin: 1rem auto;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fav-str-card-img {
+    height: 50px;
+    width: auto;
+    margin-right: 1rem;
+}
+
+.fav-str-card-content {
+    flex-grow: 1;
+}
+
+.fav-str-card-heading {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.fav-str-card-para {
+    font-size: 1rem;
+    color: #555;
+}
+
+.margin-top {
+    margin-top: 1rem;
+}
