@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="tc.css">
+</head>
+
+<body>
+    <div id="bgContainer" class="d-flex flex-column text-center align-items-center p-4">
+        <h1>Time Converter</h1>
+        <h5>Enter hours and minutes to convert them into seconds</h5>
+
+        <div class="mt-3 w-50">
+            <label for="hoursInput">Hours*</label>
+            <input id="hoursInput" type="number" class="form-control" placeholder="Enter hours">
+        </div>
+
+        <div class="mt-3 w-50">
+            <label for="minutesInput">Minutes*</label>
+            <input id="minutesInput" type="number" class="form-control" placeholder="Enter minutes">
+        </div>
+
+        <button id="convertBtn" class="btn btn-primary mt-3">Convert to Seconds</button>
+
+        <p id="errorMsg" class="text-danger mt-2"></p>
+        <p id="timeInSeconds" class="mt-2 font-weight-bold"><
