@@ -1,5 +1,5 @@
 # Speed Typing Test
-https://nikhilchikkam.github.io/Full-Stack/Speed%20Typing%20Test/
+https://nikhilchikkam.github.io/Full-Stack/Speed_Typing_Test/
 
 This is a simple web application that tests how fast you can type a randomly generated quote. The app displays a quote, starts a timer, and tracks how long it takes for the user to type the quote correctly. 
 
