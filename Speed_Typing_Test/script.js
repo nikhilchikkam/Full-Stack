@@ -1,49 +1,60 @@
-let speedTypingTest = document.getElementById("speedTypingTest");
-let timer = document.getElementById("timer");
-let quoteDisplay = document.getElementById("quoteDisplay");
-let result = document.getElementById("result");
-let quoteInput = document.getElementById("quoteInput");
-let submitBtn = document.getElementById("submitBtn");
-let resetBtn = document.getElementById("resetBtn");
-let seconds = document.getElementById("seconds");
+const quoteDisplay = document.getElementById("quoteDisplay");
+const quoteInput = document.getElementById("quoteInput");
+const submitBtn = document.getElementById("submitBtn");
+const resetBtn = document.getElementById("resetBtn");
+const seconds = document.getElementById("seconds");
+const spinner = document.getElementById("spinner");
+
 let intervalId;
-let spinner = document.getElementById("spinner");
+const url = "https://apis.ccbp.in/random-quote";
 
-let url = "https://apis.ccbp.in/random-quote";
+// Function to fetch and display quote
+const fetchQuote = async () => {
+    try {
+        spinner.classList.remove("d-none");
+        const response = await fetch(url);
+        const data = await response.json();
 
-function onLoad(url){
-    fetch(url).then(function(resposne) {
-        return resposne.json();
-    }).then(function(result) {
-        spinner.classList.toggle("d-none");
-        quoteDisplay.textContent = result.content;
-        console.log(quoteDisplay.textContent);
-        intervalId = setInterval(function() {
-            let sec = parseInt(seconds.textContent);
-            sec += 1;
-            seconds.textContent = sec;
-        }, 1000);
-    });
-}
-
-spinner.classList.toggle("d-none");
-onLoad(url);
-
-submitBtn.addEventListener("click", function(event) {
-    if (quoteInput.value === quoteDisplay.textContent) {
-        clearInterval(intervalId);
-        result.textContent = `You typed in ${seconds.textContent} seconds.`;
-    } else {
-        result.textContent = `You typed incorrect sentence.`;
+        spinner.classList.add("d-none");
+        quoteDisplay.textContent = data.content;
+        startTimer();
+    } catch (error) {
+        spinner.classList.add("d-none");
+        quoteDisplay.textContent = "⚠️ Error fetching quote. Please try again.";
     }
-});
+};
 
-resetBtn.addEventListener("click", function(){
+// Function to start the timer
+const startTimer = () => {
+    clearInterval(intervalId);
+    seconds.textContent = 0;
+
+    intervalId = setInterval(() => {
+        seconds.textContent = parseInt(seconds.textContent) + 1;
+    }, 1000);
+};
+
+// Function to check the user's input
+const checkTyping = () => {
+    if (quoteInput.value.trim() === quoteDisplay.textContent) {
+        clearInterval(intervalId);
+        document.getElementById("result").textContent = `✅ You typed in ${seconds.textContent} seconds!`;
+    } else {
+        document.getElementById("result").textContent = "❌ Incorrect text. Try again!";
+    }
+};
+
+// Function to reset the test
+const resetTest = () => {
     quoteDisplay.textContent = "";
     quoteInput.value = "";
-    seconds.textContent = 0;
-    spinner.classList.toggle("d-none");
-    result.textContent = "";
-    clearInterval(intervalId);
-    onLoad(url);
-})
+    document.getElementById("result").textContent = "";
+    fetchQuote();
+};
+
+// Event Listeners
+submitBtn.addEventListener("click", checkTyping);
+resetBtn.addEventListener("click", resetTest);
+
+// Load the first quote
+fetchQuote();

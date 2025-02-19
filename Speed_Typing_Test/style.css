@@ -1,14 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-body{
-    background-color: #dac0ff;
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f5f7fa;
 }
 
 .main-heading {
-    color: #690cb0;
+    color: #4b0082;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .main-para {
+    color: #3e4c59;
+    font-size: 18px;
+}
+
+.timer-container {
+    font-size: 24px;
     color: #3e4c59;
 }
 
@@ -17,22 +26,36 @@ img {
     width: 50px;
 }
 
-.seconds-style {
-    font-size: 38px;
-    color: #3e4c59;
+.typing-area {
+    border: 1px solid #9aa5b1;
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px;
+}
+
+.quote-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
 }
 
 textarea {
     width: 100%;
-}
-
-.text-container{
-    border-style:solid;
+    height: 80px;
+    padding: 10px;
+    font-size: 16px;
     border-radius: 5px;
-    border-color: #9aa5b1;
-    border-width: 1px;
+    border: 1px solid #ddd;
 }
 
-.result-style{
-    color: #3e4c59;
+.result-style {
+    font-size: 18px;
+    color: #008000;
+    font-weight: bold;
+}
+
+button {
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
 }
